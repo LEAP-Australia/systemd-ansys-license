@@ -8,8 +8,8 @@ Type=simple
 User=license.user
 WorkingDirectory=/opt/ansys_inc/shared_files/licensing
 ExecStart=/opt/ansys_inc/shared_files/licensing/linx64/ansysli_server -nodaemon -nomonitor -cacheflexlic -noflex -c ./license_files
-ExecStop=/opt/ansys_inc/shared_files/licensing/linx64/ansysli_server -k stop 2325@leap-lic-mel
-ExecReload=/opt/ansys_inc/shared_files/licensing/linx64/ansysli_server -k reread 2325@leap-lic-mel
+ExecStop=/opt/ansys_inc/shared_files/licensing/linx64/ansysli_server -k stop 2325@%H
+ExecReload=/opt/ansys_inc/shared_files/licensing/linx64/ansysli_server -k reread 2325@%H
 Restart=always
 RestartSec=30
 

@@ -9,8 +9,9 @@
    * The user name if changed needs to be reflected in the unit files
    * The license service will run under this user
    * Running the license services as root is strongly discouraged
-4. Change ownership of /opt/ansys_inc/shared_file to license.user (created in step 3)
-5. Copy unit files to /etc/systemd/system 
-6. Reload daemon and enable and start the ansys-interconnect service
+4. Change the hostname in the interconnect name located in ExecStop and ExecReload
+5. Change ownership of /opt/ansys_inc/shared_file to license.user (created in step 3)
+6. Copy unit files to /etc/systemd/system 
+7. Reload daemon and enable and start the ansys-interconnect service
 
 
